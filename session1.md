@@ -21,22 +21,22 @@ conda activate r_env
 
 ### 4. Make directory for practice session in your directory
 ``` 
-mkdir /media/leelabsg-storage0/PRS_tutorial/YOUR_NAME
+mkdir /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY
 ``` 
 
 ### 5. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
 ``` 
-cp /media/leelabsg-storage0/PRS_tutorial/lassosum/lassosum_script.R /media/leelabsg-storage0/PRS_tutorial/YOUR_NAME
+cp /media/leelabsg-storage0/PRS_tutorial/lassosum/lassosum_script.R /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY
 ``` 
 
-### 6. Read lassosum_script.R using nano and change YOUR_NAME using ^o(overwrite) and ^x(exit)
+### 6. Read lassosum_script.R using nano and change YOUR_DIRECTORY using ^o(overwrite) and ^x(exit)
 ```
-nano /media/leelabsg-storage0/PRS_tutorial/YOUR_NAME/lassosum_script.R
+nano /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/lassosum_script.R
 ```
 
-### 5. Run lassosum
+### 7. Run lassosum
 ```
-nohup Rscript /media/leelabsg-storage0/PRS_tutorial/YOUR_NAME/lassosum_script.R > /media/leelabsg-storage0/PRS_tutorial/YOUR_NAME/nohup.out & 
+nohup Rscript /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/lassosum_script.R > /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/nohup.out & 
 ```
 
 ### *Way to check whether the code is running properly 
@@ -44,5 +44,5 @@ nohup Rscript /media/leelabsg-storage0/PRS_tutorial/YOUR_NAME/lassosum_script.R 
 ps
 ```
 ```
-cat /home/leelabguest/YOUR_NAME/nohup.out 
+cat /home/leelabguest/YOUR_DIRECTORY/nohup.out 
 ```
