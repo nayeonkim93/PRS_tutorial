@@ -11,7 +11,7 @@ ssh leelabguest@147.47.200.192
 
 ### 1. Connect CPU
 ``` 
-launch-shell 0 720 leelabsg
+ssh leelabsg[08-11]
 ``` 
 
 ### 2. Activate conda environment
