@@ -44,5 +44,5 @@ nohup Rscript /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/lassosum_scri
 ps
 ```
 ```
-cat /home/leelabguest/YOUR_DIRECTORY/nohup.out 
+cat /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/nohup.out 
 ```
