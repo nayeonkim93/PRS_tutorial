@@ -31,7 +31,7 @@ python /media/leelabsg-storage0/PRS_tutorial/PRScs/PRScs.py \
 
 ### 4. Merge chr1 - chr22 beta files into one file 
 ``` 
-for i in {1..22}; do cat "/media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/prscs_pst_eff_a1_b0.5_phiauto_chr$i.txt" >> /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/prscs_chr1-22.txt; done
+for i in {1..22}; do cat "/media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/PRScs_pst_eff_a1_b0.5_phiauto_chr$i.txt" >> /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/prscs_chr1-22.txt; done
 ``` 
 
 ### 5. Calculate PRS using plink 
