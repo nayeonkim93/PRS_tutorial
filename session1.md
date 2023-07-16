@@ -46,3 +46,11 @@ ps
 ```
 cat /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/nohup.out 
 ```
+### 8. Check the result from R
+```
+R
+```
+```
+v <- readRDS("v.RDS")
+result <- v[["results.table"]]
+```
