@@ -38,6 +38,6 @@ for i in {1..22}; do cat "/media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/p
 ``` 
 /home/n1/leelabguest/plink \
 --bfile /media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
---score /media/leelabsg-storage0/PRS_tutorial/prscs_chr1-22.txt 2 4 6 \
---out /media/leelabsg-storage0/PRS_tutorial/score
+--score /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
+--out /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/score
 ``` 
