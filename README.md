@@ -1,5 +1,5 @@
 # PRS tutorial session (2023 summer) 
-This repository is built for PRS tutorial (2023 summer) \
+This repository is built for PRS tutorial (2023 summer) 
 
 
 ## Practice Session List
