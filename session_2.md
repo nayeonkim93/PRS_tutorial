@@ -26,7 +26,7 @@ python /data/home/leelabguest/PRS_tutorial/PRScs/PRScs.py \
 --bim_prefix=/media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
 --sst_file=/media/leelabsg-storage0/PRS_tutorial/data/summary_stat/sumstats_prscs.txt \
 --n_gwas=177415 \
---out_dir=YOUR_DIRECTORY/PRScs
+--out_dir=/data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/PRScs
 ``` 
 
 ### 4. Merge chr1 - chr22 beta files into one file 
