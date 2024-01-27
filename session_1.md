@@ -21,7 +21,7 @@ conda activate r_env
 
 ### 3. Make directory for practice session in your directory
 ``` 
-mkdir YOUR_DIRECTORY
+mkdir /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY
 ``` 
 
 ### 4. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
