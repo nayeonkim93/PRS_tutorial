@@ -21,7 +21,7 @@ mkdir YOUR_DIRECTORY
 
 ### 3. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
 ``` 
-cp lassosum/lassosum_script.R YOUR_DIRECTORY
+cp PRS_tutorial/lassosum/lassosum_script.R YOUR_DIRECTORY
 ``` 
 
 ### 4. Read lassosum_script.R using nano and change YOUR_DIRECTORY using ^o(overwrite) and ^x(exit)
