@@ -59,4 +59,5 @@ R
 ```
 v <- readRDS("v.RDS")
 result <- v[["results.table"]]
+result
 ```
