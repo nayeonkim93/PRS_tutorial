@@ -6,17 +6,20 @@ The data we are going to use are already preprocessed or downloaded.
 
 ### 0. Log in to leelabguest
 ``` 
-ssh leelabguest@147.47.200.192
+ssh leelabguest@147.47.200.131 -p 22555
 ```
 
 ### 1. Connect CPU
 ``` 
-ssh leelabsg[08-11]
+ssh leelabsg[01-07]
 ``` 
 
-### 2. Activate conda environment
+### 5. Calculate PRS using plink 
 ``` 
-conda activate python3
+/home/n1/leelabguest/plink \
+--bfile /media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
+--score YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
+--out YOUR_DIRECTORY/score
 ``` 
 
 ### 3. Run PRS-CS 
@@ -26,18 +29,24 @@ python /media/leelabsg-storage0/PRS_tutorial/PRScs/PRScs.py \
 --bim_prefix=/media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
 --sst_file=/media/leelabsg-storage0/PRS_tutorial/data/summary_stat/sumstats_prscs.txt \
 --n_gwas=177415 \
---out_dir=/media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/PRScs
+--out_dir=YOUR_DIRECTORY/PRScs
 ``` 
 
 ### 4. Merge chr1 - chr22 beta files into one file 
 ``` 
-for i in {1..22}; do cat "/media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/PRScs_pst_eff_a1_b0.5_phiauto_chr$i.txt" >> /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/prscs_chr1-22.txt; done
+for i in {1..22}; do cat "YOUR_DIRECTORY/PRScs_pst_eff_a1_b0.5_phiauto_chr$i.txt" >> YOUR_DIRECTORY/prscs_chr1-22.txt; done
 ``` 
 
 ### 5. Calculate PRS using plink 
 ``` 
 /home/n1/leelabguest/plink \
 --bfile /media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
---score /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
---out /media/leelabsg-storage0/PRS_tutorial/YOUR_DIRECTORY/score
+--score YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
+--out YOUR_DIRECTORY/score
+```
+
+### 6. Check PRS score
 ``` 
+head YOUR_DIRECTORY/score
+``` 
+
