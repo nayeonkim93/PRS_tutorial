@@ -21,7 +21,7 @@ conda activate python_3
 
 ### 3. Run PRS-CS 
 ``` 
-python /media/leelabsg-storage0/PRS_tutorial/PRScs/PRScs.py \
+python /data/home/leelabguest/PRS_tutorial/PRScs/PRScs.py \
 --ref_dir=/media/leelabsg-storage0/PRS_tutorial/data/reference/ldblk_1kg_eas \
 --bim_prefix=/media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
 --sst_file=/media/leelabsg-storage0/PRS_tutorial/data/summary_stat/sumstats_prscs.txt \
@@ -31,12 +31,12 @@ python /media/leelabsg-storage0/PRS_tutorial/PRScs/PRScs.py \
 
 ### 4. Merge chr1 - chr22 beta files into one file 
 ``` 
-for i in {1..22}; do cat "YOUR_DIRECTORY/PRScs_pst_eff_a1_b0.5_phiauto_chr$i.txt" >> YOUR_DIRECTORY/prscs_chr1-22.txt; done
+for i in {1..22}; do cat "/data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/PRScs_pst_eff_a1_b0.5_phiauto_chr$i.txt" >> /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/prscs_chr1-22.txt; done
 ``` 
 
 ### 5. Calculate PRS using plink 
 ``` 
-/home/n1/leelabguest/plink \
+/data/home/leelabguest/plink \
 --bfile /media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
 --score YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
 --out YOUR_DIRECTORY/score
@@ -44,6 +44,6 @@ for i in {1..22}; do cat "YOUR_DIRECTORY/PRScs_pst_eff_a1_b0.5_phiauto_chr$i.txt
 
 ### 6. Check PRS score
 ``` 
-head YOUR_DIRECTORY/score
+head /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/score.profile
 ``` 
 
