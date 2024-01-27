@@ -16,7 +16,7 @@ ssh leelabsg[01-07]
 
 ### 5. Calculate PRS using plink 
 ``` 
-/home/n1/leelabguest/plink \
+./plink \
 --bfile /media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
 --score YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
 --out YOUR_DIRECTORY/score
