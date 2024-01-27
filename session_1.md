@@ -6,7 +6,7 @@ The data we are going to use are already preprocessed or downloaded.
 
 ### 0. Log in to leelabguest
 ``` 
-ssh leelabguest@147.47.200.192
+ssh leelabguest@147.47.200.131 -p 22555
 ```
 
 ### 1. Connect CPU
