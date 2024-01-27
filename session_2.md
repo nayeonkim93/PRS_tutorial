@@ -44,6 +44,6 @@ for i in {1..22}; do cat "/data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/PRS
 
 ### 6. Check PRS score
 ``` 
-head /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/score.profile
+cat /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/score.profile
 ``` 
 
