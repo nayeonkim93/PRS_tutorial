@@ -26,7 +26,7 @@ mkdir /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY
 
 ### 4. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
 ``` 
-cp /data/home/leelabguest/PRS_tutorial/lassosum/lassosum_script.R /data/home/leelabguest/YOUR_DIRECTORY
+cp /data/home/leelabguest/PRS_tutorial/lassosum/lassosum_script.R /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY
 ``` 
 
 ### 5. Read lassosum_script.R using nano and change YOUR_DIRECTORY using ^o(overwrite) and ^x(exit)
