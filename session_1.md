@@ -26,17 +26,17 @@ mkdir YOUR_DIRECTORY
 
 ### 4. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
 ``` 
-cp PRS_tutorial/lassosum/lassosum_script.R YOUR_DIRECTORY
+cp /data/home/leelabguest/PRS_tutorial/lassosum/lassosum_script.R /data/home/leelabguest/YOUR_DIRECTORY
 ``` 
 
 ### 5. Read lassosum_script.R using nano and change YOUR_DIRECTORY using ^o(overwrite) and ^x(exit)
 ```
-nano YOUR_DIRECTORY/lassosum_script.R
+nano /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/lassosum_script.R
 ```
 
 ### 6. Run lassosum
 ```
-nohup Rscript YOUR_DIRECTORY/lassosum_script.R > YOUR_DIRECTORY/nohup.out & 
+nohup Rscript /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/lassosum_script.R > /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/nohup.out & 
 ```
 
 ### *Way to check whether the code is running properly 
@@ -44,12 +44,12 @@ nohup Rscript YOUR_DIRECTORY/lassosum_script.R > YOUR_DIRECTORY/nohup.out &
 ps
 ```
 ```
-cat YOUR_DIRECTORY/nohup.out
+cat /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY/nohup.out
 ```
 
 ### 7. Move to your directory 
 ```
-cd YOUR_DIRECTORY
+cd /data/home/leelabguest/PRS_tutorial/YOUR_DIRECTORY
 ```
 
 ### 8. Check the result from R
