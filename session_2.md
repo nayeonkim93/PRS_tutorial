@@ -14,12 +14,9 @@ ssh leelabguest@147.47.200.131 -p 22555
 ssh leelabsg[01-07]
 ``` 
 
-### 5. Calculate PRS using plink 
+### 2. Activate conda environment
 ``` 
-./plink \
---bfile /media/leelabsg-storage0/PRS_tutorial/data/plink/sample \
---score YOUR_DIRECTORY/prscs_chr1-22.txt 2 4 6 \
---out YOUR_DIRECTORY/score
+conda activate python_3
 ``` 
 
 ### 3. Run PRS-CS 
