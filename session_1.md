@@ -9,27 +9,32 @@ The data we are going to use are already preprocessed or downloaded.
 ssh leelabguest@147.47.200.131 -p 22555
 ```
 
-### 1. Activate conda environment
+### 1. Connect to CPU 
+``` 
+ssh leelabsg[01-07]
+``` 
+
+### 2. Activate conda environment
 ``` 
 conda activate r_env
 ``` 
 
-### 2. Make directory for practice session in your directory
+### 3. Make directory for practice session in your directory
 ``` 
 mkdir YOUR_DIRECTORY
 ``` 
 
-### 3. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
+### 4. Copy the lassosum_script.R from the PRS_tutorial/lassosum folder
 ``` 
 cp PRS_tutorial/lassosum/lassosum_script.R YOUR_DIRECTORY
 ``` 
 
-### 4. Read lassosum_script.R using nano and change YOUR_DIRECTORY using ^o(overwrite) and ^x(exit)
+### 5. Read lassosum_script.R using nano and change YOUR_DIRECTORY using ^o(overwrite) and ^x(exit)
 ```
 nano YOUR_DIRECTORY/lassosum_script.R
 ```
 
-### 5. Run lassosum
+### 6. Run lassosum
 ```
 nohup Rscript YOUR_DIRECTORY/lassosum_script.R > YOUR_DIRECTORY/nohup.out & 
 ```
@@ -42,12 +47,12 @@ ps
 cat YOUR_DIRECTORY/nohup.out
 ```
 
-### 6. Move to your directory 
+### 7. Move to your directory 
 ```
 cd YOUR_DIRECTORY
 ```
 
-### 7. Check the result from R
+### 8. Check the result from R
 ```
 R
 ```
